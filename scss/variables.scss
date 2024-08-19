@@ -1,0 +1,11 @@
+$header-text-color:#fff;
+$pink-color: rgba(248,50,157,255);
+$text-color: rgb(53, 53, 53);
+$search-container-border-color:rgba(0,0,0,.09);
+$light-brown: #b48a0e;
+@mixin display-flex() {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+}

@@ -1,0 +1,43 @@
+main {
+  margin-top: 0;
+  position: relative;
+}
+
+.trip-tags {
+  position: sticky;
+  top: 0;
+  height: 56px;
+  width: 100%;
+  overflow-x: scroll;
+  overflow-y: hidden;
+  background-color: #fff;
+  border-bottom: 1px solid #ccc;
+  z-index: 999;
+}
+.trip-tags ul {
+  margin: 0 140px;
+  width: 80rem;
+}
+.trip-tags::-webkit-scrollbar {
+  display: none;
+}
+.trip-tags li {
+  display: inline-block;
+  margin-top: 15px;
+  margin-right: 40px;
+}
+.trip-tags a {
+  color: rgb(53, 53, 53);
+  font-size: 100%;
+}
+.trip-tags a:hover {
+  color: black;
+  border-bottom: 4px solid rgb(248, 50, 157);
+  transition: transform 0.1s ease-in-out;
+  padding: 16px 0;
+}
+.trip-tags .selected {
+  color: black;
+  border-bottom: 4px solid rgb(248, 50, 157);
+  padding: 16px 0;
+}/*# sourceMappingURL=tags.css.map */

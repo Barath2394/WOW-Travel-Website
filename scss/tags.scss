@@ -1,0 +1,44 @@
+@import './variables.scss';
+main{
+    margin-top: 0;
+    position: relative;
+}
+.trip-tags{
+    position: sticky;
+    top: 0;
+    height: 56px;
+    width: 100%;
+    overflow-x: scroll;
+    overflow-y: hidden;
+    background-color: #fff;
+    border-bottom: 1px solid #ccc;
+    z-index: 999;
+    ul{
+        margin: 0 140px;
+        width: 80rem;
+    }
+    &::-webkit-scrollbar {
+        display: none;
+      }
+    li {
+        display: inline-block;
+        margin-top: 15px;
+        margin-right: 40px;
+        
+    } 
+    a{    
+        color: $text-color;
+        font-size: 100%;
+        &:hover{
+            color: black;
+            border-bottom: 4px solid $pink-color;
+            transition: transform 0.1s ease-in-out;
+            padding: 16px 0;
+        }
+    }
+    .selected{
+        color: black;
+        border-bottom: 4px solid $pink-color;
+        padding: 16px 0;    
+    }
+}

@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>All Upcoming Trips: Women only Travel Groups | WOW Club</title>
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css"
+    integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous" />
+  <link rel="stylesheet" href="./scss/main.css" />
+  <link rel="stylesheet" href="./scss/header.css" />
+  <link rel="stylesheet" href="./scss/tags.css" />
+  <link rel="stylesheet" href="./scss/filterConatiner.css" />
+  <link rel="stylesheet" href="./scss/footer.css" />
+  <link rel="stylesheet" href="./scss/mobile.css" />
+</head>
+
+<body onload="imageContainer('all')">
+  <header>
+    <div class="menu-bar-component">
+      <button class="fas fa-times fa-sm" onclick="closeMenuBar()"></button>
+    </div>
+    <img class="header-background-image"
+      src="https://res.cloudinary.com/wow-club/image/upload/c_scale,dpr_2,f_auto,q_auto,w_400/v1549007224/place3.jpg"
+      alt="header-background-image"/>
+    <div class="overlay"></div>
+    <nav>
+      <div class="fas fa-bars fa-lg w-banner-menu-open menu-bar" onclick="menuBar()">
+        <a></a>
+      </div>
+      <img src="./images/wow-image.svg" alt="wow-logo" />
+      <ul class="navbar-list">
+        <li><a class="selected-nav-list" onclick="changeNavigation(this)" href="#">Upcoming Trips</a></li>
+        <li><a onclick="changeNavigation(this)" href="#">About Us</a></li>
+        <li><a onclick="changeNavigation(this)" href="#">Contact Us</a></li>
+        <li><a onclick="changeNavigation(this)" href="#">Personalized Trips</a></li>
+      </ul>
+      <button>Login</button>
+    </nav>
+    <div class="banner-content">
+      <img
+        src="https://www.wowclub.com/assets/icon-quote-6fb90e3cb2e679601e17f64cbb748295d4e0b7b68537a353aa3fe9acc147ac23.svg"
+        alt="qoutes-icon" />
+    </div>
+    <div class="banner-content-text">
+      <p class="qoutes">
+        Man cannot discover new oceans unless he has the courage to
+        lose sight of the shore.
+      </p>
+      <p class="author">— Andre Gide</p>
+    </div>
+  </header>
+  <main>
+    <div class="trip-tags">
+      <ul>
+        <li><a class="selected" onclick="changeTag(this,'all')" href="#">All 44</a></li>
+        <li><a onclick="changeTag(this,'active')" href="#">Active 25</a></li>
+        <li><a onclick="changeTag(this,'adventure & wildlife')" href="#">Adventure & Wildlife 7</a></li>
+        <li><a onclick="changeTag(this,'culture & heritage')" href="#">Culture & Heritage 19</a></li>
+        <li><a onclick="changeTag(this,'leisure')" href="#">Leisure 17</a></li>
+        <li><a onclick="changeTag(this,'signature')" href="#">Signature 1</a></li>
+        <li><a onclick="changeTag(this,'smooth sailing')" href="#">Smooth Sailing 0</a></li>
+        <li><a onclick="changeTag(this,'wellness')" href="#">Wellness 2</a></li>
+      </ul>
+      <button class="apply-filters-button">
+        Apply Filters
+      </button>
+    </div>
+    <div class="filter-button" onclick="openFilterContainer()">
+      <a class="button button-filter display-block">
+        <i class="fas fa-filter"></i> Filters
+      </a>
+    </div>
+    <div class="filter-container">
+      <div class="search-container">
+        <div class="filter-topbar">
+          <button class="clear-filters-btn">CLEAR FILTERS</button>
+          <button class="fas fa-times fa-sm close-filters-btn" onclick="closeFilterContainer()"></button>
+        </div>
+        <div class="search-bar">
+          <input type="search" placeholder="Search by destination" />
+          <button class="fas fa-search fa-sm search-btn"></button>
+        </div>
+        <div class="budget">
+          <h4>Budget</h4>
+          <div id="slider-range" class="slider">
+            <div class="track" style="left: 0%;"></div>
+            <span class="left-slider"></span>
+            <span class="right-slider"></span>
+          </div>
+          <span id="min-range">42000</span>–<span id="max-range">440000</span>
+        </div>
+        <div class="other-options">
+          <h4>Other</h4>
+          <input type="checkbox"><label>Flights included</label>
+        </div>
+        <div class="travel-month">
+          <h4>Travel Month</h4>
+          <div class="travel-month-input-checkbox-container">
+            <input type="checkbox"><label>April - June</label><br>
+            <input type="checkbox"><label>July - September</label><br>
+            <input type="checkbox"><label>October - December</label><br>
+            <input type="checkbox"><label>January - March</label>
+          </div>
+        </div>
+      </div>
+      <div class="image-component">
+        <div id="image-component-items" class="image-container">
+          <img src="" width="100%" alt="trip-destination-image">
+          <div class="trip-type">
+            <p></p>
+          </div>
+          <i id="heart-icon" class="fas fa-heart"></i>
+          <div class="trip-destination">
+            <h3></h3>
+            <h4 class="trip-price"></h4>
+          </div>
+          <div class="trip-info">
+            <div class="trip-date">
+              <span class="date">
+                <i class="fas fa-calendar-alt fa-sm padding-right-xs opacity-light"></i>
+              </span>
+              <span class="duration">
+                <i class="fas fa-moon fa-sm opacity-light padding-right-xs"></i>
+              </span>
+              <span class="flights">
+                <i class="fa fas fa-plane fa-sm opacity-light fa-rotate-270 "></i>
+              </span>
+            </div>
+            <div class="tags">
+            </div>
+            <div class="view-details-button">
+              <a>View Details</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+  <footer>
+    <img
+      src="https://res.cloudinary.com/wow-club/image/upload/c_scale,dpr_2,f_auto,q_auto,w_400/v1549007806/footer-image2.jpg"
+      alt="footer-background-image">
+    <div class="footer-list">
+      <div>
+        <h4>Explore</h4>
+        <div>
+          <li><a href="#">Upcoming trips</a></li>
+          <li><a href="#">Blog</a></li>
+          <li><a href="#">Personalized Trip</a></li>
+        </div>
+      </div>
+      <div>
+        <h4>Company</h4>
+        <div>
+          <li><a href="#">Our Story</a></li>
+          <li><a href="#">Contact Us</a></li>
+          <li><a href="#">Careers</a></li>
+        </div>
+      </div>
+      <div>
+        <h4>Terms & Conditions</h4>
+        <div>
+          <li><a href="#">Terms & Conditions</a></li>
+          <li><a href="#">Cancellation Policy</a></li>
+          <li><a href="#">Privacy Policy</a></li>
+        </div>
+      </div>
+      <div>
+        <h4>Contact us</h4>
+        <div class="contact-us">
+          <i class="fas fa-phone fa-rotate-90 color-brown opacity-light"></i>
+          <span>+91-9871921623</span><br>
+          <i class="far fa-envelope fa-lg color-brown opacity-light"></i>
+          <span>hello@wowclub.in</span>
+        </div>
+      </div>
+    </div>
+    <div class="follow-us">
+      <h4>Follow us on</h4>
+      <div class="social-media-logo">
+        <div class="facebook"><i class="fab fa-facebook-f fa-inverse"></i></>
+        </div>
+        <div class="twitter"><i class="fab fa-twitter fa-inverse"></i></>
+        </div>
+        <div class="instagram"><i class="fab fa-instagram fa-inverse"></i></>
+        </div>
+      </div>
+    </div>
+    <h4 class="copyrights">Copyright © All Rights reserved 2013</h4>
+  </footer>
+
+</body>
+<script src="js/imageContainer.js"></script>
+<script src="js/mobileFilter.js"></script>
+<script src="js/tagSelector.js"></script>
+
+</html>

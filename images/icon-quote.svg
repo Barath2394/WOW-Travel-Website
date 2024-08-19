@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="39px" height="32px" viewBox="0 0 39 32" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>quote</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" opacity="0.3">
+        <g id="quote" transform="translate(-1.000000, -1.000000)" fill="#ffffff" fill-rule="nonzero">
+            <path d="M10.577,17.618 L16.323,17.618 L16.323,32.942 L0.999,32.942 L0.999,21.345 C0.999,8.679 6.107,1.897 16.323,0.999 L16.323,6.745 C12.492,7.815 10.577,10.887 10.577,15.96 L10.577,17.617 L10.577,17.618 Z M33.563,17.618 L39.309,17.618 L39.309,32.942 L23.985,32.942 L23.985,21.345 C23.985,8.679 29.093,1.897 39.309,0.999 L39.309,6.745 C35.478,7.815 33.563,10.887 33.563,15.96 L33.563,17.617 L33.563,17.618 Z" id="Shape"></path>
+        </g>
+    </g>
+</svg>

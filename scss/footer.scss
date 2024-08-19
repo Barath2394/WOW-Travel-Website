@@ -1,0 +1,80 @@
+@import './variables.scss';
+
+footer{
+    position: relative;
+    img{
+        position: absolute;
+        height: 330px;
+        width: 100%;
+        object-fit: cover;
+    }
+}
+
+h4{
+    font-size: 14px;
+    color: $light-brown;
+}
+
+.footer-list{
+    position: absolute;
+    padding: 0 6%;
+    padding-top:1%;
+    width: 80%;
+    @include display-flex();
+    justify-content: space-between;
+    div{
+        list-style: none;
+        li a,.contact-us{
+            font-size: 14px;
+            color:#483600;
+            &:hover{
+                border-bottom: 0.5px solid black;
+            }
+        }
+    }
+}
+.follow-us {
+    position: absolute;
+    top:150px;
+    right: 215px;
+}
+
+.social-media-logo{
+    margin-left: 10px;
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+    div{    
+        text-align: center;
+        border-radius: 50%;
+        width: 30px;
+        height: 30px;
+        margin-right: 10px;
+        i{
+            margin-top: 7px;
+        }
+    }
+}
+.facebook{
+    background-color: rgb(50, 63, 159);
+}
+.twitter{
+    background-color: rgb(17, 180, 245)
+}
+.instagram{
+    background-color: rgb(205, 7, 7);
+}
+  .social-media-logo span i {
+    color: white;
+    font-size: 24px;
+  }
+.copyrights{
+    position: absolute;
+    font-weight: normal;
+    font-size: 16px;
+    color: rgb(75, 75, 75);
+    margin-top: 18%;
+    margin-left: 40%;
+}
+
+  
